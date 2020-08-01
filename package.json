@@ -1,0 +1,16 @@
+{
+  "name": "b4-project-mizuxe",
+  "version": "1.0.0",
+  "description": "Mizuxe Book Theme",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss:css",
+    "sass:watch": "sass --watch scss:css"
+  },
+  "author": "Sergey Pavlenko",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.26.10"
+  }
+}
