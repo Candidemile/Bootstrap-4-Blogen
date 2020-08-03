@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogen</title>
+  <!-- CSS LINKS -->
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Blogen</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a href="index.html" class="nav-link">Dashboard</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="posts.html" class="nav-link  active">Posts</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="categories.html" class="nav-link">Categories</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="users.html" class="nav-link">Users</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fas fa-user"></i> Welcome Brad
+            </a>
+            <div class="dropdown-menu">
+              <a href="profile.html" class="dropdown-item">Profile
+                <i class="fas fa-user-circle"></i>
+              </a>
+              <a href="settings.html" class="dropdown-item">Profile
+                <i class="fas fa-cog"></i>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <i class="fas fa-user-times"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="main-header" class="py-2 bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1><i class="fas fa-pencil-alt"></i> Posts</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEARCH -->
+  <section id="search" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ml-auto">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search Posts...">
+            <div class="input-group-append">
+              <button class="btn btn-primary">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSTS -->
+  <section id="posts">
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <div class="card">
+            <div class="card-header">
+              <h4>Latest Posts</h4>
+            </div>
+            <table class=" table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th>#</th>
+                  <th>Title</th>
+                  <th>Category</th>
+                  <th>Date</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Post One</td>
+                  <td>Web Development</td>
+                  <td>May 10 2018</td>
+                  <td>
+                    <a href="details.html" class="btn btn-secondary">
+                      <i class="fas fa-angle-double-right"> Details</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Post Two</td>
+                  <td>Tech Gadgets</td>
+                  <td>May 11 2018</td>
+                  <td>
+                    <a href="details.html" class="btn btn-secondary">
+                      <i class="fas fa-angle-double-right"> Details</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Post Three</td>
+                  <td>Web Development</td>
+                  <td>May 14 2018</td>
+                  <td>
+                    <a href="details.html" class="btn btn-secondary">
+                      <i class="fas fa-angle-double-right"> Details</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Post Four</td>
+                  <td>Business</td>
+                  <td>May 15 2018</td>
+                  <td>
+                    <a href="details.html" class="btn btn-secondary">
+                      <i class="fas fa-angle-double-right"> Details</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Post Five</td>
+                  <td>Web Development</td>
+                  <td>May 17 2018</td>
+                  <td>
+                    <a href="details.html" class="btn btn-secondary">
+                      <i class="fas fa-angle-double-right"> Details</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Post One</td>
+                  <td>Health & Wellness</td>
+                  <td>May 20 2018</td>
+                  <td>
+                    <a href="details.html" class="btn btn-secondary">
+                      <i class="fas fa-angle-double-right"> Details</i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- PAGINATION -->
+            <nav class="ml-4">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a href="#" class="page-link">Previous</a>
+                </li>
+                <li class="page-item active">
+                  <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                  <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                  <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                  <a href="#" class="page-link">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="lead text-center">
+            Copyright &copy; <span id="year"></span>
+            Blogen
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- SCRIPTS -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+  </script>
+</body>
+
+</html>
